@@ -12,7 +12,7 @@ counter = 1
 
 # List all files in the directory
 for filename in os.listdir(image_dir):
-    if filename.endswith(('.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg')):  # Add more extensions if needed
+    if filename.endswith(('.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg','.webp')):  # Add more extensions if needed
         import_statements.append(f"import image{counter} from '../src/assets/images/{filename}';")
         image_variables.append(f"image{counter}")
         counter += 1
